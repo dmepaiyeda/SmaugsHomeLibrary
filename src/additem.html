@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <!-- additem.html - This HTML file creates an admin authentication (login and password) using JavaScript
+	  in order to protect confidential information from unauthorized users and creates an admin form for adding a new item
+	  to the Library Database -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/LibrarySystem.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<title> Add New Item </title>
+	<script type="text/javascript">
+	<!--
+	var login;
+	var password;
+	var correctlogin = "Adminsonly";
+	var correctpassword ="Smaugslib2";
+	login=prompt ('Please enter your Login to see this page');
+	password=prompt ('Please enter your Password to see this page');
+	if (login && password == correctpassword && correctlogin)
+		alert('Correct Login and Password, Press OK to continue');
+	else
+	{
+		window.location="http://www.google.ca";
+	}
+	
+
+	//form submission
+	//function sendForm(){
+	//	var x = document.forms["add_item_form"]
+	//}
+	-->
+	
+	</script>
+	
+  </head>
+
+  <body>
+    <form action="https://smaugs-library.herokuapp.com/api/additem" name="add_item_form" method="POST"> <br>
+      <h2><center>Enter the following information and click "Add New Item" to add an item to the Library</center></h2>
+		<br>
+
+    	<fieldset>
+
+	    	<center>Type of item: (required) <br><br> <input type="text" name="itemType" value=""> </center>
+	    	<br><br>
+
+	    	<center>Title: (required) <br><br><input type="text" name="title" value="" size = "24"></center>
+	    	<br><br>
+
+	    	<center>Author(s): (required)  <br><br> <input type="text" name="authors" value="" size = "20">  </center>
+	    	<br><br>
+
+	    	<center>Year of Issue: (optional)<br><br> <input type="text" name="issueYear" value="" size = "19">  </center>
+	    	<br><br>
+
+	    	<center>Publisher: (optional) <br><br> <input type="text" name="publisher" value="" size = "22" > </center>
+	    	<br><br>
+
+	    	<center><input type="submit" value="Add New Item"></center>
+    	</fieldset>
+    </form>
+
+  	<form action="LibrarySystem.html">
+  		<br>
+    	<input type="submit" value="Go to Homepage" />
+  	</form>
+</body>
+</html>

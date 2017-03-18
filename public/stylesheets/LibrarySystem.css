@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Sansita');
+
+body {
+	background-color: black;
+	background-image: url("book.jpg");
+    color: white;
+	font-family: 'Sansita', sans-serif;
+}
+
+.welcome {
+	font-family: 'Sansita', sans-serif;
+    font-size: 27px;
+    color: white;
+}
+
+.confirm_text{color: white;}
+
+input {
+	
+	font-family: 'Sansita', sans-serif;
+	font-size: 17px;
+	
+	
+}
+
+footer {
+      position: relative;
+	  text-align: center;
+      margin-top:172px; 
+	  height: 180px;
+  clear: both;
+  
+ }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- loanitem.html - This HTML file creates a form for the users to borrow Library items -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/LibrarySystem.css">
+	<title> Loan Item </title>
+  </head>
+
+  <body>
+  <!-- Form creation -->
+    <form action="https://smaugs-library.herokuapp.com/api/loan-item" method="post"> <br>
+      <h2><center>Enter the following information and click "Loan Item" to loan an item from the Library</center></h2>
+
+      <center>Type of item: (required)</center> <br>
+      <center><input type="text" name="itemType" value=""></center>
+      <br><br>
+
+      <center>Title: (required)</center> <br>
+      <center><input type="text" name="title" value=""></center>
+      <br><br>
+
+      <center>Author(s): (required)</center> <br>
+      <center><input type="text" name="authors" value=""></center>
+      <br><br>
+
+      <center>Year of Issue: (optional)</center> <br>
+      <center><input type="text" name="issueYear" value=""></center>
+      <br><br><br>
+
+      <center><input type="submit" value="Loan Item"></center>
+    </form>
+
+    <form action="/LibrarySystem">
+      <br><br>
+      <input type="submit" value="Go to Homepage" />
+    </form>
+  </body>
+</html>

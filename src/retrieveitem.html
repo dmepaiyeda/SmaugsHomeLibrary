@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<!-- retrieveitem.html - This HTML file creates an admin authentication (login and password) using JavaScript
+	  in order to protect confidential information from unauthorized users and creates an admin form for retrieving item 
+	  information from the Library Database -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/LibrarySystem.css">
+	<title> Retrieve Item Information </title>
+	<script type="text/javascript">
+  	<!--
+  	var login;
+  	var password;
+  	var correctlogin = "Adminsonly";
+  	var correctpassword ="Smaugslib2";
+  	login=prompt ('Please enter your Login to see this page');
+  	password=prompt ('Please enter your Password to see this page');
+  	if (login && password == correctpassword && correctlogin)
+  		alert('Correct Login and Password, Press OK to continue');
+  	else
+  	{
+  		window.location="http://www.google.ca";
+  	}
+  	-->
+	</script>
+  </head>
+
+  <body>
+  <!-- Form creation -->
+    <form action="https://smaugs-library.herokuapp.com/api/retrieveitem" method="POST" name="find_item_form"> <br>
+      <h2><center>Enter the following information and click "Retrieve Item Information" to retrieve an item's information from the Library</center></h2>
+  
+      <fieldset>
+
+        <center>Type of item: (required)</center> <br>
+        <center><input type="text" name="itemType" value=""></center>
+        <br><br>
+
+        <center>Title: (required)</center> <br>
+        <center><input type="text" name="title" value=""></center>
+        <br><br>
+
+        <center>Author(s): (required)</center> <br>
+        <center><input type="text" name="authors" value=""></center>
+        <br><br><br>
+
+        <center><input type="submit" value="Retrieve Item Information"></center>
+
+      </fieldset>
+
+
+    </form>
+
+    <form action="LibrarySystem.html">
+      <br><br>
+      <input type="submit" value="Go to Homepage" />
+    </form>
+  </body>
+</html>
